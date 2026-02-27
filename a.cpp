@@ -5,7 +5,7 @@ using namespace std;
 #define M 2001
 #define ec ' '
 #define one 1ll
-#define endl '\n'
+//#define endl '\n'
 const int mod = 998244353;
 #define inf 0x7f7f7f7f
 int n, m;
@@ -13,6 +13,11 @@ int n, m;
 signed main()
 {
     ios::sync_with_stdio(0); cin.tie(0), cout.tie(0);
-    cout<<1;
+    cin>>n;
+    for(int i=1;i<=n;i++)
+    {
+        cout<<i<<endl;
+    }
+    
     return 0;
 }
