@@ -1,0 +1,30 @@
+---
+# 基础风格
+BasedOnStyle: LLVM
+
+# 核心修改：关闭列宽限制，彻底禁止因超出长度而触发的自动换行
+ColumnLimit: 0
+
+# Switch 与 Case 行为控制
+AllowShortCaseLabelsOnASingleLine: true
+IndentCaseLabels: false
+IndentCaseBlocks: false
+
+# 允许各类控制流和代码块保持在单行
+AllowShortBlocksOnASingleLine: false 
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse
+AllowShortLoopsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: All
+
+# 大括号行为：强制附加在当前行尾，绝不另起一行
+BreakBeforeBraces: Allman
+
+# 保持常规的运算符与变量间距格式化（例如 a=1; 自动变成 a = 1;）
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeParens: ControlStatements
+SpaceInEmptyParentheses: false
+SpacesInCStyleCastParentheses: false
+
+# 指针与引用符号的对齐偏好（Left 代表紧贴类型，例如 int* a）
+PointerAlignment: Left
+...
