@@ -1,4 +1,25 @@
-# 忽略 Linux/Ubuntu 环境下的 C++ 默认编译产物
+# --- C++ Binary ---
+*.out
+*.exe
+*.o
+*.a
+*.so
+
+# --- Data Science & Python ---
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+data/
+venv/
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+
+# --- Others ---
+.DS_Store
+a.out# 忽略 Linux/Ubuntu 环境下的 C++ 默认编译产物
 a.out
 *.o
 

@@ -75,11 +75,18 @@ signed main()
     cout.tie(0);
     cin >> n;
     cin.ignore();
-    int lcnt = 0;
-    while (getline(cin,line[++lcnt]))
+    int lcnt = n;
+    string input;
+    for (int i = 1; i <= n;i++)
     {
-      if (line[lcnt].empty()) break;
+      getline(cin, line[i]);
     }
+      while (getline(cin, input))
+      {
+        if (input.empty()) break;
+        if (input[0] == '#') continue;
+        line[++lcnt] = input;
+      }
     for (int i = 1; i <= n;i++)
     {
       text[i] = line[i];
@@ -98,9 +105,12 @@ signed main()
     {
         cout<<word<<endl;return 0;
     }
-    patch[pcnt].second = lcnt-1;
+    patch[pcnt].second = lcnt;
     int vcnt = 0;
     int delta = 0;
+    //判断补丁头，获取补丁头信息
+    //判断补丁头信息是否合法，合法后进行替换
+    //输出
     for (int i = 1; i <= pcnt; i++) {
       auto [x, y] = patch[i];
       if (judge(line[x])) {
