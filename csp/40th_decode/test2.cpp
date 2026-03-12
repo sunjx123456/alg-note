@@ -170,6 +170,6 @@ signed main()
 		cout << ans[i];
 		if (i % col == col - 1)cout << endl;
 	}
-	//
+	////
 	return 0;
 }
